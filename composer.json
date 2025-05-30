@@ -1,0 +1,16 @@
+{
+    "name": "vendor/impulsar",
+    "description": "A PHP Framework",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Impulsar\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shajahan Basha Syed",
+            "email": "shajahanbasha.syed@gmail.com"
+        }
+    ],
+    "require": {}
+}
