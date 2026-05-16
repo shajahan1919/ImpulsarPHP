@@ -161,19 +161,19 @@ function getDomain() {
  */
 function trimCornerSlashes($string, $position = 'both') {
     if ($position === "both") {
-        if (substr($string, 0, 1) === URL_DIRECTORY_SEPARATOR) {
-            $string = substr($string, 1);
+        if (substr($string ?? '', 0, 1) === URL_DIRECTORY_SEPARATOR) {
+            $string = substr($string ?? '', 1);
         }
         if (substr($string, -1) === URL_DIRECTORY_SEPARATOR) {
-            $string = substr($string, 0, -1);
+            $string = substr($string ?? '', 0, -1);
         }
     } elseif ($position === "left") {
-        if (substr($string, 0, 1) === URL_DIRECTORY_SEPARATOR) {
-            $string = substr($string, 1);
+        if (substr($string ?? '', 0, 1) === URL_DIRECTORY_SEPARATOR) {
+            $string = substr($string ?? '', 1);
         }
     } elseif ($position === "right") {
-        if (substr($string, -1) === URL_DIRECTORY_SEPARATOR) {
-            $string = substr($string, 0, -1);
+        if (substr($string ?? '', -1) === URL_DIRECTORY_SEPARATOR) {
+            $string = substr($string ?? '', 0, -1);
         }
     }
     return $string;
